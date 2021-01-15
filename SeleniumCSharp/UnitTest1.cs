@@ -2,6 +2,7 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Edge;
 
 namespace SeleniumCSharp
 {
@@ -12,7 +13,7 @@ namespace SeleniumCSharp
         public void Setup()
         {
             Console.WriteLine("Setup");
-            Driver = new FirefoxDriver();
+            Driver = new EdgeDriver();
         }
 
         [Test]
